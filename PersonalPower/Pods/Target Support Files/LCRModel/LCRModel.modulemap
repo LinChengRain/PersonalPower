@@ -1,0 +1,6 @@
+framework module LCRModel {
+  umbrella header "LCRModel-umbrella.h"
+
+  export *
+  module * { export * }
+}
