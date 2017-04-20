@@ -77,6 +77,7 @@
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"loginState"];
         [[NSUserDefaults standardUserDefaults] setValue:userModel.username forKey:@"username"];
         [[NSUserDefaults standardUserDefaults] setValue:userModel.password forKey:@"password"];
+        [[NSUserDefaults standardUserDefaults] setValue:@(userModel.userID) forKey:@"id"];
 //        [[NSUserDefaults standardUserDefaults] setValue:userModel.token forKey:@
 //         "token"];
         [[NSUserDefaults standardUserDefaults] synchronize];

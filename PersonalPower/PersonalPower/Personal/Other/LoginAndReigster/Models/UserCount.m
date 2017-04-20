@@ -10,4 +10,15 @@
 
 @implementation UserCount
 
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key
+{
+    if ([key isEqualToString:@"id"]) {
+        self.userID = [value intValue];
+    }
+    
+    if ([key isEqualToString:@"phone"]) {
+        self.phoneNum = value;
+    }
+}
+
 @end

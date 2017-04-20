@@ -43,8 +43,9 @@ typedef enum {
         //state：1登录成功  0失败
         if ([state isEqualToString:@"200"]) {
             NSDictionary *dic = returnData[@"result"];
-            UserCount *usermodel = [[UserCount alloc] initWithDataDic:dic];
-            
+            UserCount *usermodel = [[UserCount alloc] init];
+            [usermodel setValuesForKeysWithDictionary:dic];
+//            usermodel.userID = [[NSString stringWithFormat:@"%@",dic[@"id"]] intValue];
             [self judgementWithResultMsg:msg userCount:usermodel];
         }else{
             [self judgementWithResultMsg:msg userCount:nil];

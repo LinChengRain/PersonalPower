@@ -104,6 +104,7 @@
     //初始化AFNetworking
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     
+//    sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
     sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
     sessionManager.requestSerializer.timeoutInterval = 30.0f;  //设置请求超时时间
     sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain", nil];

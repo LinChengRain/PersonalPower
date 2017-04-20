@@ -16,4 +16,5 @@
 @property(nonatomic,copy) NSString *state;//登录状态
 @property(nonatomic,copy) NSString *phoneNum;//手机号
 @property(nonatomic,copy) NSString *token;//验证令牌
+@property(nonatomic,assign) int userID;
 @end

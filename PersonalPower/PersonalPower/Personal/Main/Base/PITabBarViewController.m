@@ -12,6 +12,8 @@
 
 #import "HomeViewController.h"
 #import "PersonViewController.h"
+#import "WriteViewController.h"
+
 
 @interface PITabBarViewController ()
 
@@ -39,6 +41,9 @@
    
     HomeViewController *homeVC = [[HomeViewController alloc] init];
     [self addChildViewControllers:homeVC title:@"首页" unSelectImage:@"tabBar_home_Normal" selectedImage:@"tabBar_home_Selected"];
+    
+    WriteViewController *writeVC = [[WriteViewController alloc] init];
+    [self addChildViewControllers:writeVC title:@"创作" unSelectImage:@"tabBar_writer_Normal" selectedImage:@"tabBar_writer_Selected"];
     
     PersonViewController *personVC =  [[PersonViewController alloc] init];
     [self addChildViewControllers:personVC title:@"个人" unSelectImage:@"tabBar_person_Normal" selectedImage:@"tabBar_person_Selected"];
