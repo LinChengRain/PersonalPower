@@ -10,5 +10,6 @@ target 'PersonalPower' do
   pod 'Masonry'
   pod 'LCRModel', '~> 0.0.1'
   pod 'MBProgressHUD', '~> 1.0.0'
+  pod 'lottie-ios'
   
 end

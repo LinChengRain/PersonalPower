@@ -28,6 +28,10 @@
 		7B8ED7C31E85382C0007B0BB /* UserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8ED7C21E85382C0007B0BB /* UserInfoView.m */; };
 		7B9358071E82505E0002C22F /* HomeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9358061E82505E0002C22F /* HomeRequest.m */; };
 		7B93580A1E8256E60002C22F /* PersonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9358091E8256E60002C22F /* PersonRequest.m */; };
+		7BAF51A21EA5E5E60078B04E /* WriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAF51A11EA5E5E60078B04E /* WriteViewController.m */; };
+		7BAF51A51EA5E9C60078B04E /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAF51A41EA5E9C60078B04E /* EditViewController.m */; };
+		7BAF51A81EA5EA250078B04E /* EditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAF51A71EA5EA250078B04E /* EditView.m */; };
+		7BAF51B11EA6006C0078B04E /* WriteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAF51B01EA6006C0078B04E /* WriteRequest.m */; };
 		7BE1928D1E811CF200F30858 /* LaunchScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1928C1E811CF200F30858 /* LaunchScreenManager.m */; };
 		7BE192941E811FC000F30858 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE192911E811FC000F30858 /* LoginViewController.m */; };
 		7BE192971E811FD600F30858 /* UserCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE192961E811FD600F30858 /* UserCount.m */; };
@@ -79,6 +83,14 @@
 		7B9358061E82505E0002C22F /* HomeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeRequest.m; sourceTree = "<group>"; };
 		7B9358081E8256E60002C22F /* PersonRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonRequest.h; sourceTree = "<group>"; };
 		7B9358091E8256E60002C22F /* PersonRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonRequest.m; sourceTree = "<group>"; };
+		7BAF51A01EA5E5E60078B04E /* WriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteViewController.h; sourceTree = "<group>"; };
+		7BAF51A11EA5E5E60078B04E /* WriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteViewController.m; sourceTree = "<group>"; };
+		7BAF51A31EA5E9C60078B04E /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		7BAF51A41EA5E9C60078B04E /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		7BAF51A61EA5EA250078B04E /* EditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditView.h; sourceTree = "<group>"; };
+		7BAF51A71EA5EA250078B04E /* EditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditView.m; sourceTree = "<group>"; };
+		7BAF51AF1EA6006C0078B04E /* WriteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteRequest.h; sourceTree = "<group>"; };
+		7BAF51B01EA6006C0078B04E /* WriteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteRequest.m; sourceTree = "<group>"; };
 		7BE1928B1E811CF200F30858 /* LaunchScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchScreenManager.h; sourceTree = "<group>"; };
 		7BE1928C1E811CF200F30858 /* LaunchScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchScreenManager.m; sourceTree = "<group>"; };
 		7BE192901E811FC000F30858 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -205,6 +217,7 @@
 		7B6FBE291E80151E00424132 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7BAF51991EA5E54A0078B04E /* Write */,
 				7B182A831E81174B000D83E3 /* Base */,
 				7B6FBE2A1E80151E00424132 /* Home */,
 				7B6FBE2E1E80151E00424132 /* Person */,
@@ -356,6 +369,53 @@
 			children = (
 				7B9358081E8256E60002C22F /* PersonRequest.h */,
 				7B9358091E8256E60002C22F /* PersonRequest.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7BAF51991EA5E54A0078B04E /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				7BAF51AE1EA600630078B04E /* ViewModels */,
+				7BAF519A1EA5E54A0078B04E /* Controllers */,
+				7BAF519B1EA5E54A0078B04E /* Models */,
+				7BAF519C1EA5E54A0078B04E /* Views */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
+		7BAF519A1EA5E54A0078B04E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BAF51A01EA5E5E60078B04E /* WriteViewController.h */,
+				7BAF51A11EA5E5E60078B04E /* WriteViewController.m */,
+				7BAF51A31EA5E9C60078B04E /* EditViewController.h */,
+				7BAF51A41EA5E9C60078B04E /* EditViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7BAF519B1EA5E54A0078B04E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7BAF519C1EA5E54A0078B04E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7BAF51A61EA5EA250078B04E /* EditView.h */,
+				7BAF51A71EA5EA250078B04E /* EditView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7BAF51AE1EA600630078B04E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7BAF51AF1EA6006C0078B04E /* WriteRequest.h */,
+				7BAF51B01EA6006C0078B04E /* WriteRequest.m */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -542,12 +602,16 @@
 				7BE192971E811FD600F30858 /* UserCount.m in Sources */,
 				7B6FBE181E80112100424132 /* ViewController.m in Sources */,
 				7BEBDD9E1E83D62E0033CDBD /* RegisterRequest.m in Sources */,
+				7BAF51A21EA5E5E60078B04E /* WriteViewController.m in Sources */,
 				7B5E757A1E8A7AF20055809B /* PersonTableView.m in Sources */,
 				7B6FBE151E80112100424132 /* AppDelegate.m in Sources */,
 				7B182A8C1E8118B2000D83E3 /* PIBaseViewController.m in Sources */,
+				7BAF51A51EA5E9C60078B04E /* EditViewController.m in Sources */,
 				7BE192A11E81228700F30858 /* LoginRequest.m in Sources */,
+				7BAF51A81EA5EA250078B04E /* EditView.m in Sources */,
 				7B182A921E8118CF000D83E3 /* PersonViewController.m in Sources */,
 				7B9358071E82505E0002C22F /* HomeRequest.m in Sources */,
+				7BAF51B11EA6006C0078B04E /* WriteRequest.m in Sources */,
 				7B182A8F1E8118C4000D83E3 /* HomeViewController.m in Sources */,
 				7BEBDD9B1E83C5350033CDBD /* RegisterViewController.m in Sources */,
 				7B182A861E81176B000D83E3 /* PITabBarViewController.m in Sources */,
