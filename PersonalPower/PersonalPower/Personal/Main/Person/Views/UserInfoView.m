@@ -119,6 +119,7 @@
 {
     NSString *nick = self.nicknameTextField.text;
     NSString *age = self.ageTextField.text;
+    int lastAge = [age intValue];
     NSString *phone = self.phoneTextField.text;
     
     NSString *userData;
@@ -128,7 +129,7 @@
     }
      NSString *username = [[NSUserDefaults standardUserDefaults] valueForKey:@"username"];
     NSDictionary *dic = @{@"nickname":nick,
-                          @"age":age,
+                          @"age":@(lastAge),
                           @"phone":phone,
                           @"picture":userData,
                           @"pic_name":@"user_image",

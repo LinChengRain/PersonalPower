@@ -56,7 +56,7 @@
         [paraDic setValue:[self currentTime] forKey:@"createtime"];
         [paraDic setValue:@(userId) forKey:@"userId"];
         
-        [self.writeRequest writeWithUrlpath:@"/WriteController/writeinfo.json" parameter:paraDic];
+        [self.writeRequest writeWithUrlpath:@"/ArticleController/submitArticle.json" parameter:paraDic];
 
     };
 }
